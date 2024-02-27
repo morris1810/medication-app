@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginVertical="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:contentDescription="@string/a_big_circle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/circle_large" />
+            <ImageView
+                android:contentDescription="@string/a_not_so_big_circle"
+                android:src="@drawable/circle_small"
+                android:layout_centerInParent="true"
+                android:layout_width="65dp"
+                android:layout_height="65dp"/>
+            <ImageView
+                android:contentDescription="@string/logo"
+                android:src="@drawable/medicine"
+                android:layout_centerInParent="true"
+                android:layout_width="55dp"
+                android:layout_height="55dp"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/medicine_name_input"
+            android:text="@string/example_for_a_medicine_name"
+            android:textStyle="bold"
+            android:lines="2"
+            android:maxLines="3"
+            android:hint="Medicine Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="End on: "
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:id="@+id/date_picker_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/date_picker_day"
+                android:text="26"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:background="@drawable/rounded_datetime_bg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/date_picker_month"
+                android:text="Dec"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:background="@drawable/rounded_datetime_bg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/date_picker_year"
+                android:text="2023"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:background="@drawable/rounded_datetime_bg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginVertical="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Time (24h): "
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:id="@+id/time_picker_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time_picker_hour"
+                android:text="@string/_00"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:background="@drawable/rounded_datetime_bg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text=":"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/grey_01"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/time_picker_minute"
+                android:text="@string/_00"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:background="@drawable/rounded_datetime_bg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Repeat: "
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:background="@drawable/rounded_datetime_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:paddingHorizontal="10dp"
+                android:id="@+id/repeat_option_input"
+                android:paddingVertical="10dp"
+                android:entries="@array/repeat_option"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginVertical="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Remark: "
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:background="@drawable/rounded_datetime_bg"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/remark_input"
+                android:hint="@string/write_something"
+                android:lines="4"
+                android:paddingHorizontal="10dp"
+                android:backgroundTint="@color/grey_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/remove_button"
+        android:text="REMOVE"
+        android:backgroundTint="@color/red_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

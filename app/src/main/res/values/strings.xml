@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Medication App</string>
+    <string name="reminder">Reminder</string>
+    <string name="show_list_button">Show List Button</string>
+    <string name="a_big_circle">A Big Circle</string>
+    <string name="a_not_so_big_circle">A Not so Big Circle</string>
+    <string name="logo">Logo</string>
+    <string name="example_for_a_medicine_name">This is an example for a medicine name</string>
+    <string name="today_scheduled">Scheduled:</string>
+    <string name="time_example">08:35</string>
+    <string name="medicine_list">Medicine List</string>
+    <string name="end_on">"End On: "</string>
+    <string name="example_date">18-Oct-2023</string>
+    <string name="write_something">Write something...</string>
+    <string name="_00">00</string>
+    <string name="example_time">Mon 20:38</string>
+    <string name="medication_app">Medication App</string>
+    <string name="homepage">HomePage</string>
+    <string name="example_day_of_week">MONDAY</string>
+    <string-array name="repeat_option">
+        <item>None</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+        <item>Everyday</item>
+    </string-array>
+</resources>
