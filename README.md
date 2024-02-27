@@ -2,7 +2,7 @@
   <img width="180" src="example/logo.png" alt="logo"/>
 </p>
 
-# 💊 Medication Reminder App
+# 💊 Medication App
 
 This Kotlin-built 📱 Android app ensures you never miss a medication dose again! Designed with simplicity and ease of use in mind, it helps manage your medication schedules efficiently.
 
